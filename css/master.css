@@ -1,0 +1,225 @@
+body, html {
+  font-family: "Georgia", sans-serif;
+  margin: 0; /* Add this to remove default margin */
+  background: white;
+  padding:0;
+}
+
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 100px;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 30px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: white;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0px;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  display:none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+
+#mySidenav a.active {
+  color: white; /* Change color to white */
+}
+#topNav a.active {
+  color: #D82F8A; /* Change color to white */
+}
+#profile{
+  position:relative;
+  width:180px;
+}
+#content-right-profile{
+  margin:-220px 230px;
+  width:80%;
+}
+div{
+  font-size: 25px;
+}
+
+
+.div-border{
+  top:100px;
+  background-color:#D82F8A;
+  position: fixed;
+  width: 100%;
+  height: 10px;
+  z-index: 100;
+}
+
+.project-content{
+  top:10px;
+  padding:10px 80px;
+  margin-left:250px;
+  background-color:white;
+}
+
+
+.top {
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: white;
+  color: white;
+}
+
+.rightnav {
+  z-index: 1;
+  left:160px;
+  position: fixed;
+  top: 50px; /* Adjust as needed */
+}
+
+.rightnav a {
+  padding: 0px 48px;
+  text-decoration: none;
+  color: black;
+  font-family: Arial;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.robot{
+    border-radius: 0px;
+}
+.logo {
+  width: 165px; /* Adjust width as needed */
+  height: auto;
+  background: transparent;
+}
+
+.headshot {
+  border-radius: 138px;
+  width: 165px; /* Adjust width as needed */
+  height: auto;
+  background: transparent;
+}
+
+.robot{
+  width: 505px; /* Adjust width as needed */
+  height: auto;
+  background: transparent;
+
+}
+.rightnav a:hover {
+  color: #D82F8A;
+}
+
+
+.main {
+  top: 100px; /* Adjust to go under the .top bar */
+  max-width: 1440px;
+  font-size: 28px;
+  position: absolute;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  bottom:0px;
+  height: auto;
+}
+
+.section{
+  top: 100px;
+  width: 98%;
+  height: calc(100vh - 100px);
+  background: #D82F8A;
+  margin:auto;
+}
+
+@media screen and (max-height: 450px) and (max-width: 225px) {
+  .rightnav {
+    padding-top: 0px;
+  }
+  .rightnav a {
+    font-size: 18px;
+  }
+}
+
+.profile{
+  width:165px;
+  border-radius: 100px;
+  height:auto;
+
+}
+
+.right-content{
+    height:100%;
+}
+
+.left-content{
+  padding-right: 50px;
+  width:165px;
+  float:left;
+}
+#next-about-paragraph{
+  width:100%;
+  overflow: hidden;
+}
+
+.description{
+  font-size:22px;
+}
+
+.ml-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns */
+  grid-template-rows: repeat(3, auto); /* Three rows */
+  gap: 5px; /* Gap between grid items */
+}
+
+.ml-item {
+  border: 0px solid #000;
+}
+
+#education, #experience, #machine2, #dataVisualization, #natural, #GUI, #tinkering, #musicProduction, #contactInfo{
+  margin-top:50px;
+  border-color: black;
+  border-style: solid;
+}
+
+#caption{
+  font-size: 20px;
+  font-style:italic;
+  font-weight:900;
+}
+
+#copyright{
+  font-size: 15px;
+}
