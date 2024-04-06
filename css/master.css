@@ -1,6 +1,6 @@
 body, html {
   font-family: "Georgia", sans-serif;
-  margin: 0; /* Add this to remove default margin */
+  margin: 0;
   background: white;
   padding:0;
 }
@@ -55,10 +55,10 @@ body, html {
 
 
 #mySidenav a.active {
-  color: white; /* Change color to white */
+  color: white;
 }
 #topNav a.active {
-  color: #D82F8A; /* Change color to white */
+  color: #D82F8A;
 }
 #profile{
   position:relative;
@@ -121,31 +121,31 @@ div{
     border-radius: 0px;
 }
 .logo {
-  width: 165px; /* Adjust width as needed */
+  width: 165px;
   height: auto;
   background: transparent;
 }
 
 .headshot {
   border-radius: 138px;
-  width: 165px; /* Adjust width as needed */
+  width: 165px;
   height: auto;
   background: transparent;
 }
 
 .robot{
-  width: 505px; /* Adjust width as needed */
+  width: 505px;
   height: auto;
   background: transparent;
-
 }
+
 .rightnav a:hover {
   color: #D82F8A;
 }
 
 
 .main {
-  top: 100px; /* Adjust to go under the .top bar */
+  top: 100px;
   max-width: 1440px;
   font-size: 28px;
   position: absolute;
@@ -161,15 +161,6 @@ div{
   height: calc(100vh - 100px);
   background: #D82F8A;
   margin:auto;
-}
-
-@media screen and (max-height: 450px) and (max-width: 225px) {
-  .rightnav {
-    padding-top: 0px;
-  }
-  .rightnav a {
-    font-size: 18px;
-  }
 }
 
 .profile{
@@ -188,6 +179,7 @@ div{
   width:165px;
   float:left;
 }
+
 #next-about-paragraph{
   width:100%;
   overflow: hidden;

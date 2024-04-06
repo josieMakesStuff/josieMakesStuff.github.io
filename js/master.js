@@ -4,9 +4,6 @@ function scrollTop(){
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-
-
-
   //About clicked --> summary and about color
   //summary clicked --> summary and about color
   const sidenavLinks = document.querySelectorAll('a[href^="#"]');
