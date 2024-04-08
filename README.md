@@ -2,4 +2,4 @@ Personal website with some information about myself and a couple projects I've d
 
 https://josiemakesstuff.github.io/
 
-Currently not optimized for phones.
+Currently working on responsive design.
