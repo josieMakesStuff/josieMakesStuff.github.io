@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Custom styles */
+    body {
+      padding-top: 100px; /* Adjust for top navigation height */
+    }
+    .navbar {
+      background-color: #fff; /* White background for top navbar */
+      padding-top:50px;
+      border-bottom: 3px solid #ff69b4; /* Pink bottom border */
+    }
+    .navbar-brand {
+      padding-left: 20px; /* Padding for the logo */
+    }
+    .navbar-nav {
+      margin-left: 0; /* Move the navbar items to the left */
+    }
+    .navbar-nav .nav-item .nav-link {
+      color: #000; /* Text color for navbar links */
+    }
+    .navbar-nav .nav-item .nav-link:hover {
+      color: #6c757d; /* Text color for navbar links on hover */
+    }
+    .sidebar {
+      position: fixed;
+      top: 100px; /* Height of top navigation */
+      bottom: 0;
+      left: 0;
+      z-index: 100; /* Adjust to ensure sidebar is above other content */
+      padding: 20px;
+      background-color: #000; /* Black background for sidebar */
+      color: #fff; /* Text color for sidebar */
+      overflow-y: auto; /* Enable vertical scrolling */
+      width: 200px; /* Initial width */
+    }
+    .sidebar .nav-item .nav-link {
+      color: #fff; /* Text color for sidebar links */
+    }
+    .sidebar .nav-item .nav-link:hover {
+      color: #6c757d; /* Text color for sidebar links on hover */
+    }
+    .content {
+      margin-left: 200px; /* Adjust for sidebar width */
+      padding-left: 20px;
+      max-width:1200px;
+    }
+    .logo {
+      width: 165px;
+      padding:0;
+
+      background: transparent;
+    }
+
+    .navbar-nav .nav-item .nav-link.active,
+    .sidebar .nav-item .nav-link.active {
+      color: #ff69b4;
+    }
+
+    /* Media Query for smaller screens */
+    @media (max-width: 768px) {
+      body{
+        padding-top:56px;
+      }
+      .sidebar {
+        width: 150px;
+        top:56px;
+      }
+      .content {
+        margin-left: 150px;
+        top:56px;
+      }
+      .navbar {
+        padding-top: 5px;
+
+      }
+      .navbar a{
+
+      display: none;
+    }
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Top Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <a class="navbar-brand" href="#">Logo</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidebarNav" aria-controls="sidebarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" id="about" href="#summary">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id= "projects" href="#machine">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Side Navigation -->
+  <div class="sidebar" id="sidebarNav">
+   <span class="navbar-toggler-icon"></span>
+
+    <ul class="nav flex-column">
+      <li class="nav-item"><a class="nav-link active" href="#summary">Summary</a></li>
+      <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+      <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+      <li class="nav-item"><a class="nav-link" href="#machine">Machine Learning</a></li>
+      <li class="nav-item"><a class="nav-link" href="#data">Data Visualization</a></li>
+      <li class="nav-item"><a class="nav-link" href="#natural">Natural Language Processing</a></li>
+      <li class="nav-item"><a class="nav-link" href="#gui">Graphical User Interface</a></li>
+      <li class="nav-item"><a class="nav-link" href="#tinkering">Tinkering</a></li>
+      <li class="nav-item"><a class="nav-link" href="#music">Music Production</a></li>
+      <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      <!-- Add more sections as needed -->
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <div class="content">
+    <!-- About Section -->
+    <section id="summary">
+      <br><br>
+      <h2>About</h2>
+      <!-- Add your about content here -->
+      <p>This is the about section This is the about section This is the about section This is the about section This is the about section This is the about section This is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about section</p>
+      <!-- Add more content here -->
+    </section>
+    <section id="education">
+      <br><br>
+      <h2>Education</h2>
+      <!-- Add your about content here -->
+      <p>This is the about section This is the about section This is the about section This is the about section This is the about section This is the about section This is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about section</p>
+      <!-- Add more content here -->
+    </section>
+    <section id="experience">
+      <br><br>
+      <h2>Experience</h2>
+      <!-- Add your about content here -->
+      <p>This is the about section This is the about section This is the about section This is the about section This is the about section This is the about section This is the about section This is the about section This is the about section This is the about section This is the about section </p>
+    </section>
+
+    <!-- Projects Section -->
+
+    <section id="machine">
+      <br><br>
+      <h2>Machine Learning</h2>
+    <!-- add project subsection here -->
+    <!-- Add your projects content here -->
+      <p>This is the projects section.</p>
+      <p>This is the about sectiontiontiontiontion.about  </p>
+      <p>This is the about section This is the about section This is the about section This is the about section This is the about section This is the about section This is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about section</p>
+    </section>
+    <section id="data">
+      <br><br>
+      <h2>Data Visualization</h2>
+    <!-- add project subsection here -->
+    <!-- Add your projects content here -->
+      <p>This is the projects section.</p>
+      <p>This is the about sectiontiontiontiontion.about  </p>
+      <p>This is the about section This is the about section This is the about section This is the about section This is the about section This is the about section This is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about section</p>
+    </section>
+    <section id="natural">
+      <br><br>
+      <h2>Natural Language Processing</h2>
+      <!-- Add content for Section 1 -->
+      <p>This is Section 1.</p>
+      <p>This is the about section This is the about section This is the about section This is the about section This is the about section This is the about section This is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about section</p>
+    </section>
+    <section id="gui">
+      <br><br>
+      <h2>Graphical User Interface</h2>
+      <!-- Add content for Section 2 -->
+      <p>This is Section 2.</p>
+      <p>This is the about section This is the about section This is the about section This is the about section This is the about section This is the about section This is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about section</p>
+    </section>
+    <section id="tinkering">
+      <br><br>
+      <h2>Tinkering</h2>
+      <!-- Add content for Section 3 -->
+      <p>This is Section 3.</p>
+      <p>This is the about section This is the about section This is the about section This is the about section This is the about section This is the about section This is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about section</p>
+    </section>
+    <section id="music">
+      <br><br>
+      <h2>Music Production</h2>
+      <!-- Add content for Section 3 -->
+      <p>This is Section 3.</p>
+      <p>This is the about section This is the about section This is the about section This is the about section This is the about section This is the about section This is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about sectionThis is the about section This is the about section This is the about section This is the about section This is the about section This is the about section</p>
+    </section>
+
+
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <br><br>
+      <h2>Contact</h2>
+      <!-- Add your contact form or details here -->
+      <p>This is the contact section.</p>
+      <!-- Add more content here -->
+      <p>This is the about sectiontiontiontiontion.about sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontion </p>
+      <p>This is the about sectiontiontiontiontion.about sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontion </p>
+      <p>This is the about sectiontiontiontiontion.about sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontion </p>
+      <p>This is the about sectiontiontiontiontion.about sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontion </p>
+      <p>This is the about sectiontiontiontiontion.about sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontion </p>
+      <p>This is the about sectiontiontiontiontion.about sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontion </p>
+      <p>This is the about sectiontiontiontiontion.about sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontion </p>
+      <p>This is the about sectiontiontiontiontion.about sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontionabout sectiontiontiontiontion </p>
+    </section>
+
+    <!-- Additional Sections -->
+
+    <!-- Add more sections as needed -->
+  </div>
+
+  <!-- JavaScript for Smooth Scrolling -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+
+    window.addEventListener('scroll', function() {
+      const sections = document.querySelectorAll('section[id]');
+      const navbarLinks = document.querySelectorAll('.navbar-nav a, .sidebar a');
+      let scrollY = window.pageYOffset;
+      let sectionId = null;
+
+      sections.forEach(current => {
+        const sectionTop = current.getBoundingClientRect().top + window.pageYOffset - document.querySelector('.navbar').offsetHeight-20;
+        console.log(sectionTop);
+
+        const sectionHeight = current.offsetHeight;
+
+        console.log(sectionHeight);
+
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+          sectionId = current.getAttribute('id');
+
+          //id="about"   -education and experience
+          //id="projects" - data, nlp, gui, tinkering, music
+
+        }
+      });
+
+      navbarLinks.forEach(link => {
+        const href = link.getAttribute('href').substring(1);
+        if (href === sectionId) {
+          link.classList.add('active');
+        } else {
+          link.classList.remove('active');
+        }
+      });
+
+    });
+
+    // Smooth scrolling for top navigation links
+    document.querySelectorAll('.navbar-nav a, .sidebar a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+          const offsetTop = targetElement.getBoundingClientRect().top + window.pageYOffset - document.querySelector('.navbar').offsetHeight;
+          window.scrollTo({
+            top: offsetTop,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+
+    // Scroll to top when clicking on the logo
+    document.querySelector('.navbar-brand').addEventListener('click', function(e) {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+
+    });
+  });
+</script>
+
+
+</body>
+</html>
